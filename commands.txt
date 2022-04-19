@@ -1,0 +1,6 @@
+mvn io.quarkus:quarkus-maven-plugin:2.8.0.Final:create \
+                                       -DprojectGroupId=org.gs \
+                                       -DprojectArtifactId=quarkus-rest-client \
+                                       -DclassName="org.gs.AppResource" \
+                                       -Dpath="/video" \
+                                       -Dextensions="resteasy,resteasy-jackson,rest-client,rest-client-jackson"
