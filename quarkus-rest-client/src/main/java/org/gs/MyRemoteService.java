@@ -21,11 +21,11 @@ import java.util.Set;
  *     }
  * }
  */
-@RegisterRestClient(baseUri = "https://stage.code.quarkus.io/api")
+@RegisterRestClient(baseUri = "http://localhost:9000")
 public interface MyRemoteService {
 
     @GET
-    @Path("/extensions")
+    @Path("/video")
     Set<Extension> getExtensionsById(@QueryParam("id") String id);
 
     class Extension {
